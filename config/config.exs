@@ -51,6 +51,7 @@ config :tailwind,
 config :nerves, source_date_epoch: "1719505822"
 
 config :nerves_hub_link, configurator: NervesHubLink.Configurator.SharedSecret
+config :nerves_hub_cli, uri: "https://manage.nervescloud.com"
 
 if Mix.target() == :host do
   import_config "host.exs"
